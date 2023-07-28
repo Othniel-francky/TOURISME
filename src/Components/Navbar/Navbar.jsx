@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import './navbar.css';
 import {SiYourtraveldottv} from "react-icons/si";
 import {AiFillCloseCircle} from "react-icons/ai";
 import {TbGridDots} from "react-icons/tb";
@@ -9,7 +9,7 @@ const Navbar = () =>{
 
     const [active, setActive] = useState("navBar")
     const showNav = () =>{
-        setActive('navBar activeNavbar')
+        setActive('navBar activeNavbar')    
     }
 
 // code pour supprimer ma navbar
