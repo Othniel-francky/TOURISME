@@ -101,6 +101,27 @@
     font-size: 100%;
   }
 
+  .content{
+    position: relative;
+    width: 95vw;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgColor);
+    overflow: hidden;
+    border: 1rem;
+    box-shadow: 2px 2px 8px var(--greyText) ;
+  }
+
+  /* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+  } */
+
   @media screen and (min-width: 556px) {
     .mainContent, .singlePost{
       grid-template-columns: repeat(2,1fr);

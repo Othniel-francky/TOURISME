@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 
+
 const App = () => {
     return (
         <div>
@@ -21,6 +22,7 @@ const App = () => {
           <Staff/> 
           <Tours/> 
           <Footer/> 
+
         </div>
     )
 }

@@ -1,1 +1,138 @@
-/*# sourceMappingURL=sidebar.css.map */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240,1%, 48%);
+  --bgColor: hsl(220, 18%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%,97%);
+}
+
+.side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.sidebar {
+  background: var(--whiteColor);
+  box-shadow: 1px 0px 4px var(--greyText);
+  width: 18%;
+  height: 100%;
+  gap: 3rem;
+  overflow: auto;
+}
+.sidebar .logoDiv {
+  padding: 1.5rem 1.5rem 0;
+  cursor: pointer;
+}
+.sidebar .logoDiv img {
+  max-width: 20px;
+  margin-right: 0.5rem;
+  background: var(--inputColor);
+  border-radius: 2px;
+  padding: 0.2rem;
+}
+.sidebar .logoDiv h2 {
+  color: var(--PrimaryColor);
+}
+.sidebar .menuDiv .divTitle, .sidebar .settingsDiv .divTitle {
+  color: var(--blackColor);
+  padding: 0 1.5rem 1.5rem;
+}
+.sidebar .menuDiv .menuLists .listItem, .sidebar .settingsDiv .menuLists .listItem {
+  padding: 0.2rem 1.5rem;
+  width: 100%;
+  position: relative;
+}
+.sidebar .menuDiv .menuLists .listItem::before, .sidebar .settingsDiv .menuLists .listItem::before {
+  position: absolute;
+  content: "";
+  height: 0%;
+  left: 0;
+  width: 5px;
+  bottom: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: var(--PrimaryColor);
+}
+.sidebar .menuDiv .menuLists .listItem .menuLink, .sidebar .settingsDiv .menuLists .listItem .menuLink {
+  color: var(--greyText);
+  font-weight: 500;
+  transition: 0;
+}
+.sidebar .menuDiv .menuLists .listItem .menuLink .icon, .sidebar .settingsDiv .menuLists .listItem .menuLink .icon {
+  margin-right: 0.5rem;
+}
+.sidebar .menuDiv .menuLists .listItem:hover .menuLink, .sidebar .settingsDiv .menuLists .listItem:hover .menuLink {
+  color: var(--PrimaryColor);
+  transition: 0;
+}
+.sidebar .menuDiv .menuLists .listItem:hover::before, .sidebar .settingsDiv .menuLists .listItem:hover::before {
+  height: 100%;
+  transition: 0.3s ease;
+}
+.sidebar .sideBarCard {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+.sidebar .sideBarCard .icon {
+  position: absolute;
+  border: 10px solid var(--whiteColor);
+  font-size: 3rem;
+  border-radius: 50%;
+  top: -8px;
+  right: 50%;
+  transform: translate(50%);
+  z-index: 100;
+}
+.sidebar .sideBarCard .carContent {
+  position: relative;
+  padding: 1rem;
+  background: var(--PrimaryColor);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sidebar .sideBarCard .carContent h3 {
+  font-size: var(--h3FontSize);
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-weight: 800;
+  color: var(--blackColor);
+}
+.sidebar .sideBarCard .carContent p {
+  font-size: var(--normalFontSize);
+  color: var(--textColor);
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+.sidebar .sideBarCard .carContent .btn {
+  padding: 0.1rem;
+  position: relative;
+  color: var(--textColor);
+  z-index: 1000;
+}
+.sidebar .sideBarCard .carContent .circle1, .sidebar .sideBarCard .carContent .circle2 {
+  position: absolute;
+  background: var(--paleGreen);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.sidebar .sideBarCard .carContent .circle1 {
+  height: 100px;
+  width: 100px;
+  top: -50px;
+  left: -50px;
+}
+.sidebar .sideBarCard .carContent .circle2 {
+  height: 150px;
+  width: 150px;
+  bottom: -80px;
+  right: -70px;
+  z-index: 1;
+}/*# sourceMappingURL=sidebar.css.map */
